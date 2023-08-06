@@ -58,9 +58,8 @@ a {
     color: var(--white);
     text-decoration: none;
 }
-
-#heroHeader {
-   display: flex;
+/*Do I even need this: position relative is important but it's in both the partent and the grandparent*/
+.heroHeader {
    position: relative; 
 }
 
@@ -70,67 +69,246 @@ a {
     background-size:cover;
     height: 300px;
     width: 100%;
-    margin-bottom: none;
-    position: absolute;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .profileBannerImgAltDescription {
     display: none;
 }
-/* from here on it's weird/
-#heroHeader {
-    position: relative;
-    display: flex;
-}
-/*come back to here and try to get position h2 to show*/
-.position {
-    position: absolute;
-}
 
-.position h2 {
+.textOverImg {
+    position: absolute;
+    top: 44%;
+    bottom: 50%;
+    left: 75%;
     background-color: var(--dark);
-    padding: 10px; 
+    padding: 11px; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color:#FFFFFF;
+}
+
+.selfIntroduction {
+    display: flex;
+    width: 95%;
+    margin: 30px;
+    background-color: var(--white);
+}
+
+.selfIntroCategoryHeader {
+    width: 20%;  
+}
+
+#about-me {
+    color: var(--twilight);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#about-me h2 { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: var(--twilight); 
+}
+
+.introBlurb {
+    border-left: 5px solid var(--twilight);
+    padding: 10px 30px;
+    width: 80%;
+    font-family: 'Trebuchet MS', Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: var(--white);
+    color: var(--twilight);
+    margin: 20px;
+}
+
+.projectsShowcase {
+    display: flex;
+    width: 95%;
+    margin: 30px;
+    min-height: 800px;
+    background-color: var(--white);
+    position: relative;    
+} 
+
+.projectsShowcaseCategoryHeader {
+    width: 20%;    
+}
+
+#my-work {
+    color: var(--twilight);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 100px;
+    min-height: 800px;
+    width: 20%;
+    
+    /*
+    flex-basis: 400px;
+    min-height: 800px;
+    justify-self: flex-start; 
+    */ 
+}
+
+#my-work h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: var(--twilight);
+}
+
+.cardContainer {
+    border-left: 5px solid var(--twilight);
+    padding: 10px 30px;
+    width: 80%;
+    font-family: 'Trebuchet MS', Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: var(--white);
+    color: var(--twilight);
+    margin: 20px;
+}
+    
+    /*
+    flex-basis: 800px;
+    max-height: 100%;
+    */
+
+.featureImageCard {
+    width: 800px;
+    height: 500px;
+    justify-content: flex-end;
+}
+
+    /* flex-basis: 800px;
+    min-height: 400px;  */
+
+.bottomLeft {
+    width: 380px;
+    height: 300px;
+    display: inline;
+}
+
+ /* flex-basis: 400px;
+    min-height: 400px; */
+
+.bottomRight {
+    width: 380px;
+    height: 300px;
+    display: inline;
+}
+
+.labelContainer {
+    flex-basis: 150px;
+    min-height: 75px;
     
 }
 
-
-
-.profileBannerImg {
-    height: 205px;
-    width: 100%;
-    margin-bottom: none;
-    background-image:image()"../images/banner-img-profile-pic.jpg"))
-    background-size: cover;
-    background-position: center;
+.largerFont {
+    font-size: 14px;
+    color: var(--twilight);
 }
 
-.heroHeaderAltDescription {
-    display:none;
+.smallerFont {
+    font-size: 11px;
+    color: var(--twilight);
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+.contactMe {
+    display: flex;
+    width: 95%;
+    margin: 30px;
+    background-color: var(--white);
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
+.contactMeCategoryHeader {
+    width: 20%;
 }
 
-/* As paragraphs only occur in the Showcase and Sidebar sections I moved the rule which styles for p to this location to make for logical top to bottom flow in the stylesheet. Actually this rule could be omitted altogether as 16px is the default for text */
-p {
+#contact-me {
+    color: var(--twilight);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 20%;
+}
+
+#contact-me h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: var(--twilight);
+}
+
+.contactLinks {
+    border-left: 5px solid var(--twilight);
+    /*padding: 10px 30px;*/
+    padding-top: 15px;
+    width: 80%;
+    font-family: 'Trebuchet MS', Calibri, sans-serif;
     font-size: 16px;
+    line-height: 1.2;
+    background-color: var(--white);
+    color: var(--twilight);
+    /*margin: 20px;*/
+    margin-right: 20px;
+    float: right;
 }
 
-#contentShowcase {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.contactLinks ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 300px;
 }
+
+.contactLinks ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration:underline;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/*
+}
+.categoryHeader {
+    width: 50%;
+    padding: 10px 30px;
+}
+
+.myWork {
+    width: 50%;
+    padding: 10px 30px;
+    color: var( --twilight);
+}
+
+.myWork h2 {
+    padding: 10px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+}
+
+.featureCard {
+    border-left: 5px solid var(--twilight);
+    padding: 10px 30px;
+    width 75%;
+    line-height: 1.2;
+}
+
+.featureCard h2 {
+
+}
+
+a {
+    flex-basis: 
+} 
 
 #benefitsSidebar {
     margin-right: 20px;
@@ -144,7 +322,7 @@ p {
 }
 
 /* Rationalized the style rules as they apply to services and benefits classes to prevent code being written in triplicate */
-.benefits {
+/*.benefits {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -177,7 +355,8 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+*/
+/*
 #footer {
     padding: 30px;
     clear: both;
@@ -188,3 +367,8 @@ p {
 #footer h2 {
     font-size: 20px;
 }
+
+width 75%;
+    display: inline-block;
+    margin-left: 20px;
+    */

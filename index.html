@@ -30,74 +30,60 @@
 
     <!-- Main section consisting of the Hero-header/Profile-pic image and job-title, the About Me heading and paragraph sections, and the My Work Showcase section with three cards serving as links to the project webpages -->
     <main>
-        <container id="heroHeader">
+        <section class="heroHeader">
             <div class="Image">
                 <figure class="profileBannerImg"></figure>
-                <figcaption class="profileBannerImgAltDescription">Banner with a profile picture of the job candidate and an abstract blue geometric design</figcaption>  
+                <figcaption class="profileBannerImgAltDescription">Banner with a profile picture of the job candidate and an abstract blue geometric design</figcaption>
+                <figcaption class="textOverImg">Full Stack Developer</figcaption>  
             </div>
-            <div class="position">
-                <h2>Full Stack Developer</h2>
+        </section>
+
+
+        <section class="selfIntroduction">
+            <div class="selfIntorCategoryHeader">
+                <h2 id="about-me">About Me</h2>
             </div>
-        </container>
-
-        <!-- </container>
-        <container id="heroHeader">
-            <section class="heroImg">
-                <figure class="profileBannerImg"></figure>
-                <figcaption class="profileBannerImgAltDescription">Banner with a profile picture of the job candidate and an abstract blue geometric design</figcaption>  
-                <figure class="profileBannerImg"></figure>
-                <figcaption class="profileBannerImgAltDescription">Banner with a profile picture of the job candidate and an abstract blue geometric design</figcaption><img src="./assets/images/banner-img- profile-pic.jpg" role="img" alt="Banner with a profile picture of the job candidate and an abstract blue geometric design"> <div class="imgAndText"> -->
-            
-
-        <container id="selfIntroduction">
-            <section class="categoryHeader">
-                <h2 class="aboutMe">About Me</h2>
-            </section>
-            <section id="introBlurb">
+            <div class="introBlurb">
                 <p>Full stack development is quite a career swerve from what I was doing before: pastoral ministry. During my 10  years of post-secondary education in classics and divinity, my 4 years of university teaching in theology, and 15 years of leading a congregation in Guelph, Ontario, I acquired many soft skills which transfer well to the work of a full stack developer. My academic background has given me the love of learning and the knowledge of how to learn — an ongoing part of any role in the constantly evolving tech field.  My congregational leadership background has honed my skills in communication, collaboration, project management and organizational systems. It was during my ministry years that I became interested in the power of well-designed tech media as a platform for The Message and as a first line interface between organizations and their subscribers. At a little beyond mid career I took on the challenge of learning to code and while my learning will continue forever, I look forward to launching myself in this new career and tailoring my growth to what is needed in my role at your company.  I enjoy travelling, writing and gardening, and am happy to travel for work or work remotely.</p>
-            </section>
-        </container>
+            </div>
+        </section>
 
-        <container id="projectsShowcase">
-            <section class="categoryHeader">
-                <h2 class="myWork">My Work</h2>
-            </section>
-            <section class="featureCard">
-                <header>
-                    <h3>SEO Update for Horiseon</h3>
-                    <p>HTML/CSS</p>
-                </header>
-                <img src="./assets/images/horiseon-project-img" role="link" alt="marketing meeting image drawn from the horiseon project" />
-            </section>
-            <section class="card">
-                <header>
-                    <h3>Coding Bootcamp Study Guide</h3>
-                    <p>HTML/CSS/JS</p>
-                </header>
-                <img src="./assets/images/study-guide-project-img" role="link" alt="study hall image signifying the study guide project" />
-            </section>
-            <section class="card">
-                <header>
-                    <h3>Password Generator</h3>
-                    <p>HTML/CSS/JS</p>
-                </header>
-                <img src="./assets/images/password-generator-project-img" role="link" alt="password generator image signifying the password generator project" />
-            </section>
-        </container>
+        <section class="projectsShowcase">
+            <div class="projectsShowcaseCategoryHeader">
+                <h2 id="my-work">My Work</h2>
+                <div class="cardContainer">
+                    <img class="featureImageCard" src="./assets/images/horiseon-project-img.jpg" role="link" alt="marketing meeting image drawn from the horiseon project" />
+                        <div class="labelContainer">
+                            <p class="largerFont" SEO Update for Horiseon></p>
+                            <p class="smallerFont" HTML & CSS></p>
+                        </div>
+                    <img class="bottomLeft" src="./assets/images/study-guide-project-img.jpg" role="link" alt="study hall image signifying the study guide project" />
+                        <div class="labelContainer">
+                            <p class="largerFont" Coding Bootcamp Study Guide></p>
+                            <p class="smallerFont" HTML,CSS & Javascript></p>
+                        </div>
+                    <img class="bottomRight" src="./assets/images/password-generator-project-img.jpg" role="link" alt="password generator image signifying the password generator project" />
+                        <div class="labelContainer">
+                            <p class="largerFont" Password Generator Project></p>
+                            <p class="smallerFont" HTML & CSS></p>
+                        </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer. The contact me section -->
-    <section>
-        <h2>Contact Info</h2>
+    <!-- <h2>Contact Info</h2>
           <ul>
             <li><strong>Email:</strong> <a href="#">kwubbenhorst@yahoo.ca</a></li>
             <li><strong>Github:</strong> <a href="#">https://github.com/kwubbenhorst/</a></li>
             <li><strong>Portfolio:</strong> <a href="#">coming soon!</a></li>
           </ul>
-      </section>
-    <footer id="contactMe">
-        <section class="categoryHeader">
-            <h2 class="contactMe">Contact Me</h2>
+      </section><section> -->
+        
+    <footer class="contactMe">
+        <section class="contactMeCategoryHeader">
+            <h2 id="contact-me">Contact Me</h2>
         </section>
         <section class="contactLinks">
             <ul>
@@ -122,3 +108,21 @@
 </body>
 
 </html>
+<!--<header id="mainHeader">
+    <section id="Name">
+        <h1>Karla Wubbenhorst</h1>           
+    </section>
+    <nav id="navigationLinks">
+        <ul>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#my-work">My Work</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+</header>  -->
