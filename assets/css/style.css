@@ -105,6 +105,7 @@ a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 20px;
     margin-left: 100px;
+    text-align: center;
 }
 
 #about-me h2 { 
@@ -114,9 +115,9 @@ a {
 }
 
 .introBlurb {
-    border-left: 5px solid var(--twilight);
     padding: 10px 30px;
-    width: 80%;
+    border-left: 5px solid var(--twilight);
+    width: 90%;
     font-family: 'Trebuchet MS', Calibri, sans-serif;
     font-size: 16px;
     line-height: 1.2;
@@ -125,27 +126,42 @@ a {
     margin: 20px;
 }
 
-.projectsShowcase {
+
+.projectsShowcase { 
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
     width: 95%;
-    margin: 30px;
-    min-height: 800px;
+    height: 860px;
     background-color: var(--white);
-    position: relative;    
-} 
-
+    margin-left: 30px;
+    padding-bottom: 20px;
+  }
+  
 .projectsShowcaseCategoryHeader {
-    width: 20%;    
-}
-
-#my-work {
+    width: 20%;
     color: var(--twilight);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 20px;
-    margin-left: 100px;
-    min-height: 800px;
-    width: 20%;
-    
+    text-align: center;
+    margin-top: 40px;
+  }
+
+.shopWindow {
+    border-left: 5px solid var(--twilight);
+    width: 90%;
+    height: 800px;
+    text-align: center;
+
+  }
+
+#my-work {
+    margin-top: 40px;
+    margin-left: 75px;
+    height: 850px;
+    color: var(--twilight);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
     /*
     flex-basis: 400px;
     min-height: 800px;
@@ -159,62 +175,114 @@ a {
     color: var(--twilight);
 }
 
-.cardContainer {
-    border-left: 5px solid var(--twilight);
-    padding: 10px 30px;
-    width: 80%;
-    font-family: 'Trebuchet MS', Calibri, sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    background-color: var(--white);
-    color: var(--twilight);
-    margin: 20px;
-}
-    
-    /*
-    flex-basis: 800px;
-    max-height: 100%;
-    */
-
-.featureImageCard {
+.shopWindowTopRow {
     width: 800px;
     height: 500px;
-    justify-content: flex-end;
 }
 
-    /* flex-basis: 800px;
-    min-height: 400px;  */
+.featureCard {
+    padding-left: 20px;
+    width: 800px;
+    text-align: center;
+    position: relative; 
+}
+
+.featureCard header {
+    margin-top: 50px;
+    padding: 10px;
+    width: 180px;
+    background-color: var(--twilight);
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+}
+
+.featureCard header p .mainLabel {
+    font-size: 14px;
+}
+
+.featureCard header p .secondaryLabel {
+    font-size: 11px;   
+}
+  
+.featureCard img {
+    width: 800px;
+    height: 500px;
+  }
+
+.shopWindowBottomRow {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
 
 .bottomLeft {
-    width: 380px;
-    height: 300px;
-    display: inline;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    flex-wrap:wrap;
+    position: relative;
 }
 
- /* flex-basis: 400px;
-    min-height: 400px; */
+.bottomLeft header {
+    margin-top: 15px;
+    padding: 10px;
+    width: 160px;
+    background-color: var(--twilight);
+    color: var(--white);
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;    
+}
+
+.bottomLeft header p .mainLabel {
+    font-size: 14px;
+}
+
+.bottomLeft header p .secondaryLabel {
+    font-size: 11px;   
+}
+
+.bottomLeft img {
+    width: 390px;
+    height: 300px;
+    margin: 0px 20px 0px 0px;
+}
 
 .bottomRight {
-    width: 380px;
-    height: 300px;
-    display: inline;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    position: relative;
 }
 
-.labelContainer {
-    flex-basis: 150px;
-    min-height: 75px;
-    
-}
-
-.largerFont {
+.bottomRight header {
+    margin: 15px 0px 0px 10px;
+    padding: 10px;
+    width: 160px;
+    background-color: var(--twilight);
+    color: var(--white);
     font-size: 14px;
-    color: var(--twilight);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
 }
 
-.smallerFont {
-    font-size: 11px;
-    color: var(--twilight);
+.bottomRight header p .mainLabel {
+    font-size: 14px;
 }
+
+.bottomRight header p .secondaryLabel {
+    font-size: 11px;   
+}
+
+.bottomRight img {
+    width: 390px;
+    height: 300px;
+    margin: 0px 20px 0px 10px;
+}
+
 
 .contactMe {
     display: flex;
@@ -273,102 +341,3 @@ a {
     text-decoration: none;
 }
 
-
-/*
-}
-.categoryHeader {
-    width: 50%;
-    padding: 10px 30px;
-}
-
-.myWork {
-    width: 50%;
-    padding: 10px 30px;
-    color: var( --twilight);
-}
-
-.myWork h2 {
-    padding: 10px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    margin-right: 25px;
-    flex-wrap: wrap;
-}
-
-.featureCard {
-    border-left: 5px solid var(--twilight);
-    padding: 10px 30px;
-    width 75%;
-    line-height: 1.2;
-}
-
-.featureCard h2 {
-
-}
-
-a {
-    flex-basis: 
-} 
-
-#benefitsSidebar {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/* Rationalized the style rules as they apply to services and benefits classes to prevent code being written in triplicate */
-/*.benefits {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefits h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.services {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.services img {
-    max-height: 200px;
-}
-
-.services h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-*/
-/*
-#footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-}
-
-#footer h2 {
-    font-size: 20px;
-}
-
-width 75%;
-    display: inline-block;
-    margin-left: 20px;
-    */
