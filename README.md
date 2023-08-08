@@ -1,4 +1,3 @@
-![At 992](https://github.com/kwubbenhorst/karlawubbenhorst-work-portfolio/assets/140316693/41a18b5f-6644-4ec5-bff3-1058938715cb)
 # karlawubbenhorst-work-portfolio
 
 ## Description:
