@@ -190,7 +190,7 @@ figcaption {
 }
 
 #bottom-left-card {
-    margin-left: 18%;
+    margin-left: 20%;
 }
 
 #bottom-left-card-header {
@@ -351,6 +351,12 @@ figcaption {
     #hero h2 {
         font-size: 20px;
         font-weight: bolder;  
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #nav-links {
+        left: 50%;
     }
 }
 
