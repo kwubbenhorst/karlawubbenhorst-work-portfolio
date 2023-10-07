@@ -327,19 +327,19 @@ figcaption {
     }
     
     #bottom-left-card-header {
-        margin: 20px 0px 0px 8px;
+        margin: 15px 0px 0px 10px;
         width: 100px;    
     }
     
     #bottom-right-card-header {
-        margin: 20px 0px 0px 8px;
+        margin: 15px 0px 0px 10px;
         width: 100px;   
     }
     
     .bottom-row-card img {
         width: 236px;
         height: 200px;
-        margin: 0px 10px 0px 8px; 
+        margin: 0px 10px 0px 10px; 
     }
 
     #contact-links li a {
