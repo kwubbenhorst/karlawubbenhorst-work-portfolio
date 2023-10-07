@@ -354,9 +354,9 @@ figcaption {
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 369px) {
     #nav-links {
-        left: 40%;
+        left: 5%;
     }
 }
 
